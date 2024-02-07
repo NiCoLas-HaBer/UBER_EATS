@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp3.AccountCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="AccountCreation" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="118,76,0,0" TextWrapping="Wrap" Text="UserName(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,110,0,0" TextWrapping="Wrap" Text="Password(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,142,0,0" TextWrapping="Wrap" Text="Confirm Password(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,176,0,0" TextWrapping="Wrap" Text="e-mail(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,0,0,0" TextWrapping="Wrap" Text="Adress(*):" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,246,0,0" TextWrapping="Wrap" Text="Card Number(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,280,0,0" TextWrapping="Wrap" Text="Pin(*):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" Text="Account Creation" VerticalAlignment="Top" FontSize="20"/>
+
+        <TextBox Name="UserName" HorizontalAlignment="Left" Height="16" Margin="249,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
+
+        <TextBox Name="e_mail" HorizontalAlignment="Left" Height="16" Margin="249,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
+        <TextBox Name="Adress" HorizontalAlignment="Left" Height="16" Margin="249,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="151"/>
+        <TextBox Name="Card_Number" HorizontalAlignment="Left" Height="16" Margin="249,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
+        <TextBox Name="Pin" HorizontalAlignment="Left" Height="16" Margin="249,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
+        <PasswordBox Name="Password" HorizontalAlignment="Left" Margin="249,110,0,0" VerticalAlignment="Top" Width="151" Height="16"/>
+        <PasswordBox Name="Password_Confirmation" HorizontalAlignment="Left" Margin="249,142,0,0" VerticalAlignment="Top" Width="151" Height="16"/>
+
+        <Button  Content="Create" HorizontalAlignment="Left" Margin="305,364,0,0" VerticalAlignment="Top" Width="60" Click="CreateMethod"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="249,364,0,0" VerticalAlignment="Top" Width="51" Click="BackMethod"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="484,364,0,0" VerticalAlignment="Top" Width="50" Click="HelpMethod"/>
+
+    </Grid>
+</Window>
